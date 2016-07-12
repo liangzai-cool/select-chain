@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+  </head>
+  <body>
+    <select name="provinceId" data-group="group1" data-level="1" data-placeholder-text="请选择"></select>
+    <select name="cityId"     data-group="group1" data-level="2"></select>
+    <select name="districtId" data-group="group1" data-level="3"></select>
+<hr>
+    <select name="provinceId" data-group="group2" data-level="1"></select>
+    <select name="cityId"     data-group="group2" data-level="2"></select>
+    <select name="districtId" data-group="group2" data-level="3"></select>
+    <script src="jquery-3.0.0.min.js"></script>
+    <script src="select-cascade.js"></script>
+    <script src="mock-data.js"></script>
+    <script>
+      $(function(){
+        $('select[data-group="group1"][data-level]').selectCascade({
+          rootLevel: 1, 
+          remoteUrl: '',
+          placeholderText: '请选择',
+          placeholderValue: ''
+        });
+        $('select[data-group="group2"][data-level]').selectCascade({rootLevel: 1, remoteUrl: ''});
+      });
+    </script>
+  </body>
+</html>
