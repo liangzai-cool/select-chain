@@ -1,5 +1,5 @@
 $.fn.extend({
-  selectCascade: function(options) {
+  selectChain: function(options) {
     var dom = this;
     var rootLevel = options.rootLevel || this.attr('data-level');
     var groupName = options.groupName || this.attr('data-group');

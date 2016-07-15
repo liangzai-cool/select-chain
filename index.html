@@ -16,13 +16,13 @@
     <script src="mock-data.js"></script>
     <script>
       $(function(){
-        $('select[data-group="group1"][data-level]').selectCascade({
+        $('select[data-group="group1"][data-level]').selectChain({
           rootLevel: 1, 
           remoteUrl: '',
           placeholderText: '请选择',
           placeholderValue: ''
         });
-        $('select[data-group="group2"][data-level]').selectCascade({rootLevel: 1, remoteUrl: ''});
+        $('select[data-group="group2"][data-level]').selectChain({rootLevel: 1, remoteUrl: ''});
       });
     </script>
   </body>
